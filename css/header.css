@@ -1,0 +1,102 @@
+
+/* login/register header css + when user login */
+.logins {
+    width: 100%;
+    display: inline-block;
+    text-align:end;
+    margin-top: 10px;
+    padding-bottom: 20px;        
+}
+    .login-border{
+        border-bottom: 1px solid #ddd;
+    }
+     .loginas {
+        text-decoration: none;
+        display: inline-block;
+        color: #666;
+        margin-left: 20px;
+        line-height: 30px;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+        text-align: start;
+    }
+  
+    .loginas2 {
+        text-decoration: none;
+        display: inline-block;
+        color: #666;
+        margin-left: 5px;
+        line-height: 30px;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+        text-align: start;
+    }
+    .profile-link {   
+        text-align: start !important;
+    }
+    .logins > a:hover {
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+        border-bottom: 4px solid black;
+        transition: 0.2s;
+    }
+    .dropdown > i {
+        
+        line-height: 30px;
+        font-size: 25px;
+    }
+    
+    /* search , shopping cart + wish list header css */
+
+    .row-search {
+        padding: 20px 20px !important;
+    }
+    .cart-wishlist {
+        display: flex;
+    }
+    .cart, .wishlist {
+        display: flex;
+        margin: 0 20px;
+    }
+        .cart  i , .wishlist  i {
+            line-height: 50px;
+            font-size: 40px;
+            padding: 0 10px;
+        }
+
+        .cart-first-word {
+            line-height: 20px;
+            font-size: 20px;   
+        }
+        .cart-second-word {
+            line-height: 30px;
+            font-size: 25px;   
+        }
+        .menu-border {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0px 2px 10px 0px rgba(70, 68, 67, 0.3);
+        }
+        .main-menu {
+            display: flex;
+            width: 100%;
+        }
+        .main-menu > a {
+            padding-left: 20px;
+            line-height: 50px;
+            text-decoration: none;
+            color: #666;
+            font-size: 25px;
+        }
+
+         a {
+            text-decoration: none;
+            color: black !important;
+            transition: 0.2s;
+        }
+
+         a:hover {
+            text-decoration: none !important;
+            
+        }
