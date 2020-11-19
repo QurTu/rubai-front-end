@@ -104,8 +104,73 @@
             color: #666;
             font-size: 25px;
         }
-
-      
+        .home-hero {
+            height: 400px;
+            width: 100vw;
+            background-image: url(../img/heropic.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .items-row{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+           
+            justify-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .items-row > .item {
+            padding: .5rem;
+             font-size: 1.2rem;
+             text-align: center;
+           
         
+        }
+        .whole-item:hover {
+            box-shadow:0 1px 4px 0 rgba(0,0,0,.3);
+        }
+        .items-row > .item > img {
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.25s ease-in-out;
+           
+        }
+        .kaina-item {
+            text-align: center;
+            color: black;
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        .items-row  h2 {
+            color: black;
+            padding: 0 10px 30px;
+        }
       
+        .items-row  h2:hover {
+            text-decoration: underline;
+        }
+        .category-row{
+            margin-top: 80px;
+            margin-bottom: 30px;
+            padding-bottom:10px ;
+            border-bottom: #666 1px solid;
+            position: relative;
+            padding: 0 50px 10px;
+           
+        }
+
+        .category-row h2{ 
+             font-size: 40px;
+        }
+        .category-row a{ 
+           
+            position: absolute;
+            top: 0;
+            right: 0;
+       }
         
