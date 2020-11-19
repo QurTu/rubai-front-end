@@ -198,124 +198,53 @@
 
                                <!-- Header section END-->
                                 <!-- CONTENT section START-->
-                                <div class="home-hero"> 
+                <div class="container product-container"> 
+                    <div class="row">
+                        <div class="col-6 " > 
+                            <img src="./img/adv_1.png" alt="">
+                        </div>
 
-                                   </div>
+                        <div class="col-6 " >
+                            <p><a href="">category</a> > <a href="">subcat</a> > <a href="">subsubcat</a> </p>
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <form action="" method="get" class="needs-validation" novalidate>
+
+                            <div class="form-group">
+                                <label for="">{{$variant->variant_name}}: </label>
+                                <select name='variant[{{$variant->variant_name}}]'   required aria-describedby="inputGroupPrepend" class="form-control">                             
+                                    <option disabled selected value> -- pasirinkite -- </option>
+                                    <option  value> -- select an option -- </option>
+                                        <option value="{{$option['name']}}"  data-qnt="{{$option['qnt']}}" @if( $option['qnt'] == 0 ) disabled @endif > {{$option['name']}} @if( $option['qnt'] == 0 ) (baigesi) @endif </option>  
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Pasirinkite savybe
+                                      </div>
+                                </div>
+                          
+                              
+<!-- Product Quantity -->
+                            <div class="form-group">
+                            <label for="formGroupExampleInput">Kiekis:</label>
+                                <input type="number" name="product_qnt" min="1" value='1' required class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                                <div class="invalid-feedback">
+                                    maziausais galiams pasirinkimas 1
+                                  </div>
+                                </div>
+                                <h2>56.56 €</h2>
+                            	
+                            <button type="submit">i Krepšelis</button> 
+                        </form>
+                        </div>
+                </div>
+                <div class="desciption"> 
+                    <h2>Prekes aprasymas</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati assumenda veniam
+                         molestias maxime ratione sed tenetur fugiat quod quidem tempora nihil, eum enim, amet vitae quasi alias laudantium quaerat itaque explicabo? Magni in recusandae accusantium itaque necessitatibus provident pariatur unde sint molestias fugiat inventore, dolorem fuga, rerum esse repudiandae?</p>
+                </div>
+                </div>         
 
                                      <!-- show Kategory section-->
 
-      <div class="container">
-        <div class="row category-row"> 
-          <h2>Kategory name</h2>
-      <a href="">   visos kategorioje prekes </a> </div>
-          <div class="row ">
-              <div class="items-row">
-                
-               <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-            </div>
-        </div>
-      </div>
-   
-      <div class="container">
-        <div class="row category-row">
-          <h2>Kategory name</h2>
-          <a href="">   visos kategorioje prekes </a> 
-        </div>
-          <div class="row ">
-              <div class="items-row">
-                
-               <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-                <a class="whole-item" href="">  <div class="item"> 
-                  <img src="./img/adv_1.png" alt="">
-                  <div class="kaina-item"> kaina</div>
-                  <h2>    Lorem ipsum dolor sit amet.</h2>                 
-                </div>  </a>
-            </div>
-        </div>
-      </div>
         
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -324,6 +253,34 @@
 
     <script src="./mega/js/jquery.menu-aim.js"></script>
     <script src="./mega/js/main1.js"></script> <!-- menu aim  rasyti main2 jei home routas-->
+
+    <script>
+    $( document ).ready(function() {
+        $("#form-control").prop("selectedIndex", -1);
+    });
+  </script>
+   
+
+    <script>
+        (function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
+
+    </script>
     
 </body>
 </html>
