@@ -115,14 +115,12 @@
         .items-row{
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-           
-            justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
             margin: 0;
             padding: 0;
         }
         .items-row > .item {
-            padding: .5rem;
+            padding: 10px;
              font-size: 1.2rem;
              text-align: center;
            

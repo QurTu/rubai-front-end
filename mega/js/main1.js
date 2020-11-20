@@ -79,10 +79,5 @@ jQuery(document).ready(function($){
 
 
 });
-$(window).resize(function(){
-	console.log($(document).width())
-	
 
-	
-} );
 
