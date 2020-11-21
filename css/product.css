@@ -13,11 +13,11 @@
     font-size: 35px;
     padding: 20px 0 50px;
 }
+
 .product-container h2 {
     font-size: 35px;
     padding: 20px 40px 0px;
     font-weight: bold;
-    
 }
 
 .product-container label {
@@ -33,10 +33,11 @@
     margin: 30px 10px 20px;
     padding: 10px 50px 10px;
 }
+
 .desciption {
     margin: 50px 0 50px;
-    
 }
+
 .desciption h2 {
     border-bottom: #666 solid 1px;
     padding-bottom: 20px;
