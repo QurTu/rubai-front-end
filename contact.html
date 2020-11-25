@@ -213,112 +213,60 @@
     <!-- CONTENT section START-->
 
 
-    <div class="container order-container">
-        <h1>Užsakymo detalės:</h1>
-        <div class="row order-details">
-            <div class="col-md-4 mb-3">
-                <h1>Pristatymas</h1>
-                <h2>Kurjeriu į namus</h2>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h1>Pirkėjas</h1>
-                <h2>Martynas Martinkenas </h2>
-                <div>
-                    <i class="fas fa-phone"></i> +375646464666
+
+
+
+    <form action="/action_page.php">
+        <input type="radio" name="vehicle" value="Bike">
+
+
+    </form>
+
+    <div class="container shipping-add">
+        <h1>Susitiekite su mumis:</h1>
+
+        <form class="needs-validation" action="{{route('shipping.add')}}" method="post" novalidate>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">Vardas</label>
+                    <input type="text" name='name' class="form-control" id="validationCustom01" placeholder="vardas" value="" required>
+
                 </div>
-                <div>
-                    <i class="fas fa-map-marker-alt"></i> Sodu 8, Vidiskiu k., Ignalinos r.
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Elektroninis paštas</label>
+                    <input type="text" name='email' class="form-control" id="validationCustom06" placeholder="Elektroninis paštas" value="" required>
                 </div>
 
 
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Telefono numeris</label>
+                    <input type="text" name='phone' class="form-control" placeholder="telefono numeris" value="">
+
+                </div>
+
+
+
             </div>
-            <div class="col-md-4 mb-3">
-                <h1>Mokėjimas</h1>
-                <img src="./img/paysera.png" alt="">
+
+            <div class="form-row">
+
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom03">Žinutė</label>
+                    <textarea name="message" id="" cols="30" class="form-control" id="validationCustom03" placeholder="žinutė" required rows="10"></textarea>
+
+
+                </div>
+
+
+
             </div>
-        </div>
+
+
+
+            <button class="buy-button" type="submit">Siųsti Žinutę</button>
+        </form>
     </div>
 
-    <div class="container ">
-        <div class="row">
-            <div class="product-cart">
-                <h1>Prekės:</h1>
-                <div class="row cart-upper">
-                    <div class="col-5">
-                        <h3> Prekė </h3>
-                    </div>
-                    <div class="col-2">
-                        <h3> Savybės </h3>
-                    </div>
-                    <div class="col-1">
-                        <h3>Vieneto Kaina</h3>
-                    </div>
-                    <div class="col-2">
-                        <h3>Kiekis</h3>
-                    </div>
-                    <div class="col-2">
-                        <h3>Bendra Kaina</h3>
-                    </div>
-                </div>
-                <div class="row cart-item">
-                    <div class="col-5 cart-item-img-name"> <img src="./img/adv_1.png" alt="">
-                        <a href="">   Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                    </div>
-                    <div class="col-2">
-                        <div class="cart-variants">
-                            <div class="cart-variant">
-                                Dydis: <span>XL</span>
-                            </div>
-                            <div class="cart-variant">
-                                Dydis: <span>XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 cart-item-price">9.99€</div>
-                    <div class="col-2">
-                        <div class="cart-qty">
-                            <h2>5</h2>
-                        </div>
-                    </div>
-                    <div class="col-2 cart-item-price">18.99€
-
-                    </div>
-                </div>
-                <div class="row cart-item">
-                    <div class="col-5 cart-item-img-name"> <img src="./img/adv_1.png" alt="">
-                        <a href="">   Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                    </div>
-                    <div class="col-2">
-                        <div class="cart-variants">
-                            <div class="cart-variant">
-                                Dydis: <span>XL</span>
-                            </div>
-                            <div class="cart-variant">
-                                Dydis: <span>XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 cart-item-price">9.99€</div>
-                    <div class="col-2">
-                        <div class="cart-qty">
-
-                            <h2>5</h2>
-
-                        </div>
-                    </div>
-                    <div class="col-2 cart-item-price">18.99€
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-end">
-            <h1 class="cart-sum">Bendra Suma: <span>25,26€</span></h1>
-        </div>
-        <div class="row justify-content-end">
-            <button class="buy-button" type="submit">Pirkti</button>
-        </div>
-    </div>
 
 
 
