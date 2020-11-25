@@ -187,3 +187,9 @@
        top: 0;
        right: 0;
    }
+   
+   .modal-body h1 {
+       font-weight: bold;
+       font-size: 30px;
+       text-align: center;
+   }
