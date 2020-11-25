@@ -211,6 +211,34 @@
 
 
     <!-- CONTENT section START-->
+
+
+    <div class="container order-container">
+        <h1>Užsakymo detalės:</h1>
+        <div class="row order-details">
+            <div class="col-md-4 mb-3">
+                <h1>Pristatymas</h1>
+                <h2>Kurjeriu į namus</h2>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h1>Pirkėjas</h1>
+                <h2>Martynas Martinkenas </h2>
+                <div>
+                    <i class="fas fa-phone"></i> +375646464666
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i> Sodu 8, Vidiskiu k., Ignalinos r.
+                </div>
+
+
+            </div>
+            <div class="col-md-4 mb-3">
+                <h1>Mokėjimas</h1>
+                <img src="./img/paysera.png" alt="">
+            </div>
+        </div>
+    </div>
+
     <div class="container ">
         <div class="row">
             <div class="product-cart">
@@ -249,13 +277,11 @@
                     <div class="col-1 cart-item-price">9.99€</div>
                     <div class="col-2">
                         <div class="cart-qty">
-                            <i class="fas fa-minus"></i>
                             <h2>5</h2>
-                            <i class="fas fa-plus"></i>
                         </div>
                     </div>
                     <div class="col-2 cart-item-price">18.99€
-                        <i class="fas fa-trash"></i>
+
                     </div>
                 </div>
                 <div class="row cart-item">
@@ -275,24 +301,29 @@
                     <div class="col-1 cart-item-price">9.99€</div>
                     <div class="col-2">
                         <div class="cart-qty">
-                            <i class="fas fa-minus"></i>
+
                             <h2>5</h2>
-                            <i class="fas fa-plus"></i>
+
                         </div>
                     </div>
                     <div class="col-2 cart-item-price">18.99€
-                        <i class="fas fa-trash"></i>
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-end">
-            <h1 class="cart-sum">Bendra Suma:<span>25,26€</span></h1>
+            <h1 class="cart-sum">Bendra Suma: <span>25,26€</span></h1>
         </div>
         <div class="row justify-content-end">
             <button class="buy-button" type="submit">Pirkti</button>
         </div>
     </div>
+
+
+
+
+
 
     <!-- show Kategory section-->
 
@@ -306,7 +337,25 @@
     <script src="./mega/js/jquery.menu-aim.js"></script>
     <script src="./mega/js/main1.js"></script>
     <!-- menu aim  rasyti main2 jei home routas-->
-
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </body>
 
 </html>

@@ -104,3 +104,12 @@
 .buy-button:hover {
     font-weight: bold;
 }
+
+.cart-sum {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.cart-sum span {
+    font-weight: bold;
+}
